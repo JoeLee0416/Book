@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Map · GitBook</title>
+        <title>框架 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="NIO.html" />
+    <link rel="next" href="../framework/Spring.html" />
     
     
-    <link rel="prev" href="Collection.html" />
+    <link rel="prev" href="../Java/NIO.html" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../Topic/DataStructure.html">
+        <li class="chapter " data-level="1.2" data-path="DataStructure.html">
             
-                <a href="../Topic/DataStructure.html">
+                <a href="DataStructure.html">
             
                     
                     数据结构
@@ -134,9 +134,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../Topic/JavaCollection.html">
+        <li class="chapter " data-level="1.3" data-path="JavaCollection.html">
             
-                <a href="../Topic/JavaCollection.html">
+                <a href="JavaCollection.html">
             
                     
                     Java集合
@@ -148,9 +148,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="Collection.html">
+        <li class="chapter " data-level="1.3.1" data-path="../Java/Collection.html">
             
-                <a href="Collection.html">
+                <a href="../Java/Collection.html">
             
                     
                     Collection
@@ -161,9 +161,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.2" data-path="Map.html">
+        <li class="chapter " data-level="1.3.2" data-path="../Java/Map.html">
             
-                <a href="Map.html">
+                <a href="../Java/Map.html">
             
                     
                     Map
@@ -179,9 +179,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="NIO.html">
+        <li class="chapter " data-level="1.4" data-path="../Java/NIO.html">
             
-                <a href="NIO.html">
+                <a href="../Java/NIO.html">
             
                     
                     IO
@@ -193,9 +193,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="NIO.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Java/NIO.html">
             
-                <a href="NIO.html">
+                <a href="../Java/NIO.html">
             
                     
                     NIO
@@ -211,9 +211,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../Topic/framework.html">
+        <li class="chapter active" data-level="1.5" data-path="framework.html">
             
-                <a href="../Topic/framework.html">
+                <a href="framework.html">
             
                     
                     框架
@@ -243,9 +243,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../Topic/CN.html">
+        <li class="chapter " data-level="1.6" data-path="CN.html">
             
-                <a href="../Topic/CN.html">
+                <a href="CN.html">
             
                     
                     计算机网络
@@ -305,7 +305,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Map</a>
+        <a href=".." >框架</a>
     </h1>
 </div>
 
@@ -320,17 +320,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="map">Map</h1>
-<h3 id="hashmap">HashMap</h3>
-<ol>
-<li>&#x65E0;&#x5E8F;&#xFF0C;&#x5141;&#x8BB8;&#x503C;&#x4E3A;null&#xFF0C;&#x6700;&#x591A;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;key&#x4E3A;null</li>
-<li>&#x5E95;&#x5C42;&#x57FA;&#x4E8E;&#x54C8;&#x5E0C;&#x8868;&#x5B9E;&#x73B0;&#xFF0C;Java&#x7684;&#x54C8;&#x5E0C;&#x8868;&#x7531;&#x6570;&#x7EC4;&#x52A0;&#x94FE;&#x8868;&#x5B9E;&#x73B0;&#xFF0C;&#x5728;JDK1.8&#x4E2D;&#x7684;HashMap&#x8FD8;&#x52A0;&#x5165;&#x4E86;&#x7EA2;&#x9ED1;&#x6811;</li>
-<li>&#x521D;&#x59CB;&#x5BB9;&#x91CF;&#x4E0E;&#x88C5;&#x8F7D;&#x56E0;&#x5B50;&#x5BF9;HashMap&#x5F71;&#x54CD;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x521D;&#x59CB;&#x5BB9;&#x91CF;&#x9ED8;&#x8BA4;&#x4E3A;16</li>
-<li>&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#x6B65;&#xFF0C;&#x5373;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x5199;HashMap&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;&#x95EE;&#x9898;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;Collections&#x7684;synchronizedMap&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;ConcurrentHashMap&#x3002;</li>
-</ol>
-<h3 id="hashmap&#x548C;hashtable&#x7684;&#x533A;&#x522B;">HashMap&#x548C;HashTable&#x7684;&#x533A;&#x522B;</h3>
-<p>&#x76F8;&#x540C;&#xFF1A;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x57FA;&#x672C;&#x76F8;&#x540C;
-&#x4E0D;&#x540C;&#xFF1A;HashMap&#x662F;&#x975E;&#x540C;&#x6B65;&#x7684;&#xFF0C;HashTable&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x4F7F;&#x7528;ConcurrentHashMap&#xFF1B;HashMap&#x5141;&#x8BB8;&#x4E3A;null&#xFF0C;HashTable&#x4E0D;&#x5141;&#x8BB8;&#x4E3A;null</p>
+                                <h1 id="&#x6846;&#x67B6;">&#x6846;&#x67B6;</h1>
+<p>&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x6846;&#x67B6;&#x7684;&#x5B66;&#x4E60;&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#xFF1A;Spring&#x3001;Mybatis&#x7B49;&#x3002;</p>
 
                                 
                                 </section>
@@ -358,12 +349,12 @@
 
             
                 
-                <a href="Collection.html" class="navigation navigation-prev " aria-label="Previous page: Collection">
+                <a href="../Java/NIO.html" class="navigation navigation-prev " aria-label="Previous page: NIO">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="NIO.html" class="navigation navigation-next " aria-label="Next page: IO">
+                <a href="../framework/Spring.html" class="navigation navigation-next " aria-label="Next page: Spring">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -374,7 +365,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Map","level":"1.3.2","depth":2,"next":{"title":"IO","level":"1.4","depth":1,"path":"Java/NIO.md","ref":"Java/NIO.md","articles":[{"title":"NIO","level":"1.4.1","depth":2,"path":"Java/NIO.md","ref":"Java/NIO.md","articles":[]}]},"previous":{"title":"Collection","level":"1.3.1","depth":2,"path":"Java/Collection.md","ref":"Java/Collection.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Java/Map.md","mtime":"2020-04-16T06:33:59.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-03T16:04:57.203Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"框架","level":"1.5","depth":1,"next":{"title":"Spring","level":"1.5.1","depth":2,"path":"framework/Spring.md","ref":"framework/Spring.md","articles":[]},"previous":{"title":"NIO","level":"1.4.1","depth":2,"path":"Java/NIO.md","ref":"Java/NIO.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Topic/framework.md","mtime":"2020-04-20T15:56:36.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-03T16:04:57.203Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
